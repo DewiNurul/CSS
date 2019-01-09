@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan 6</title>
+    <style media="screen">
+      .container{
+        width: 50%;
+        height: 200px;
+        overflow: auto;
+        margin-left: :0 auto;
+      }
+      .static{ position: static; border: 2px solid green;}
+      .relative{
+        position: relative;
+        border: 2px solid red;
+        left: 20px; /*jarak dari posisi paling kiri sebesar 20px*/
+        bottom: 0;
+      }
+      .absolute{ position: absolute; border: 2px solid blue; left: 20px; bottom: 40px; }
+      .sticky{
+        position: sticky;
+        border: 2px solid yellow;
+        top: 0;
+        left: 20px;
+        background: darkblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="sticky">
+        Ini adalah biodata saya
+      </p>
+
+      <p class="static">
+        <b>Ini adalah biodata saya</b> <br>
+        Nama   : Dewi Nurul Mahardika <br>
+        Asal   : Malang <br>
+        TTL    : 31 Agustus 2002 <br>
+        Status : Pelajar
+      </p>
+
+      <p class="relative">
+        <b>Ini adalah biodata saya</b> <br>
+        Nama   : Dewi Nurul Mahardika <br>
+        Asal   : Malang <br>
+        TTL    : 31 Agustus 2002 <br>
+        Status : Pelajar
+      </p>
+
+      <p class="absolute">
+        <b>Ini adalah biodata saya</b> <br>
+        Nama   : Dewi Nurul Mahardika <br>
+        Asal   : Malang <br>
+        TTL    : 31 Agustus 2002 <br>
+        Status : Pelajar
+      </p>
+
+      <p class="fixed">
+      Ini merupakan biodata saya
+    </p>
+    </div>
+  </body>
+</html>
